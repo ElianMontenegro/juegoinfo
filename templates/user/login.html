@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load  static %}
+{% block title %}
+Log in
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/user/sesion.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include "include/header.html" %}
+<div class="cotainer__all">
+    <div class="container_sesion">
+        <form method="POST" class="card"> {% csrf_token %}
+            <input type="email" placeholder="Email" value="{{ email }}" name="email">
+            <input type="password" placeholder="Contraseña" value="{{ password }}" name="password">
+    
+            {% for error in form.non_field_errors %}
+            <p>
+                {{ error|escape }}
+            </p>
+            {% endfor %}
+            
+            <button type="submit"> Log in</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,66 @@
+.cotainer__all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 700px;
+    background-color: transparent;
+}
+.container_sesion .card  {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+.container_sesion .card input{
+    margin: 40px 0;
+    width: 80%;
+    font-size: 20px;
+    height: 50px;
+    border: none;
+    outline-style: none;
+    background-color: transparent;
+    border-bottom: 1px solid ;
+
+
+}
+.container_sesion .card button{
+    height: 50px;
+    width: 50%;
+    background-color: #177be6;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    outline-style: none;
+    margin: 15px 0;
+    
+
+}
+.container_sesion .card button:hover{
+    background-color: #0068d6;
+    box-shadow: 0 0 15px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+    color: white;
+
+}
+
+.container_sesion .card p{
+    justify-content: start;
+    height: 20px;
+    padding: 3px;
+    font-size: 14px;
+    background-color: rgb(218, 58, 58);
+    border-radius: 10px;
+    font-weight: bold;
+
+}

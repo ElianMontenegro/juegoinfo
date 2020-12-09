@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load  static %}
+{% block title %}
+Juegos
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/panel/index.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include "include/header.html" %}
+<div class="container_index">
+
+    {% for juego in juegos  %}
+    <div class="card">
+        <div class="image"><img src="{{ juego.image }}" alt=""></div>
+        <div class="info">
+            <div class="titulo"> 
+                <h2>{{juego.name}} </h2>
+            </div> 
+            <div class="description"> 
+                <h4>{{juego.description | truncatechars:70}} </h4>
+            </div>
+            <div class="precio">
+                <h3>${{juego.price}} </h3>
+                <a class="steam" href="{{ juego.link_url }}"><img src="{% static 'img/steam.png' %}" alt=""></a>
+            </div>
+        </div>
+        
+    </div>
+    {% endfor %}
+
+
+</div>
+
+
+
+{% include "include/footer.html" %}
+
+{% endblock content %}

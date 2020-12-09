@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load  static %}
+{% block title %}
+Juegos
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/panel/index.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include "include/header.html" %}
+<div class="container_index">
+    <div class="card">
+        <div class="image"><img src="{{ juego.image.url }}" alt=""></div>
+        <div class="info">
+            <h2>{{object.name}} </h2>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

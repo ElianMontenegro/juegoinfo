@@ -1,0 +1,70 @@
+.container_index{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.container_index .card{
+    display: flex;
+    width: 356px;
+    height: 438px;
+    background-color: aqua;
+    margin: 30px 30px;
+    flex-direction: column;
+    transition: 0.5s;
+    
+
+}
+.container_index .card:hover{
+    
+    box-shadow: 0 0 10px  #44B78B,0 0 10px #44B78B,0 0 20px #44B78B;
+    transition: 0.5s;
+    
+
+}
+.container_index .card .image{
+    display: flex;
+    flex: 1 1;
+    background-color: rgb(91, 91, 126);
+    
+
+}
+.container_index .card .image img{
+    
+    width: 100%;
+    object-fit: fill;
+
+}
+.container_index .card .info{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    background: #44B78B;
+    
+
+}
+.container_index .card .info .titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container_index .card .info .description{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 95%;
+    margin: 0 5px;
+    
+    
+}
+.container_index .card .precio{
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
