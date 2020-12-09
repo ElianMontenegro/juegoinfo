@@ -10,10 +10,10 @@ ALLOWED_HOSTS = ['juegoinfo.herokuapp.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'juegoinfo',
-        'USER': 'elian',
-        'PASSWORD': 'OLAVARRIA18491',
-        'HOST': 'localhost',
+        'NAME':'d867j5amjm2gou',
+        'USER': 'ivswsliekrtsit',
+        'PASSWORD': 'b13ad16ec48adabc7d89ad06b7fa7f98a4b60a66bc0553248645c8017ca7f141',
+        'HOST': 'ec2-35-172-246-19.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
