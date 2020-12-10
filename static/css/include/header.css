@@ -92,6 +92,7 @@
     
     
     
+    
   }
 
   .container .container__sub_menu{
@@ -120,7 +121,49 @@
   .container .container__perfil:hover  .container__sub_menu ul li{
     width: 200px;
     
+  }
+  .container .contenido img {
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  @media only screen and (min-width:0px) and (max-width:1000px){
+    .container .contenido img {
+      display: block;
+      margin: 30px 0;
+    }
+    
    
+  }
 
+  @media only screen and (min-width:0px) and (max-width:1000px){
+    .container .container__perfil a {
+      display:none ;
+    }
+    .container .contenido a {
+      display:none ;
+    }
+  }
 
+  @media only screen and (min-width:200px) and (max-width:630px){
+    .container .container__buscador form input{
+      width: 250px;
+   
+    }
+  }
+
+  @media only screen and (min-width:200px) and (max-width:380px){
+    .container .container__buscador form input{
+      width: 200px;
+   
+    }
+  }
+
+  @media only screen and (min-width:200px) and (max-width:290px){
+    .container .container__buscador form input{
+      width: 150px;
+    }
   }
