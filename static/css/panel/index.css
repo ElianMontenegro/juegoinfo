@@ -5,6 +5,7 @@
     background-color: transparent;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 75px 0px;
 
 }
 .container_index .card{
@@ -38,7 +39,7 @@
     object-fit: fill;
 
 }
-.container_index .card .info{
+.container_index .card .info{ 
     display: flex;
     flex: 1 1;
     flex-direction: column;

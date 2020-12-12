@@ -4,47 +4,38 @@
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/include/header.css' %}">
+
 {% endblock css %}
 
 {% block content %}
-<header>
-    <div class="container">
-        <div class="contenido">
-          <input type="checkbox" id="check"> <img src="{% static 'img/menu_bar.png' %}" alt="" >
-            <a href="{% url 'panel_app:index' %}" >
-                JuegosInfo
-            </a>
-        </div>
-        <div class="container__buscador">
-            <form method="GET">
-              <button class="lupa" type="submit" ><img src="{% static 'img/search.png' %}" alt=""></button>
-              <input type="text" id="kword" name="kword" placeholder="Buscar..">
-            </form>
-        </div>
-        <div class="container__user">
-
-        </div>
-        {% if  user.is_anonymous %}
-        <div class="container__login">
-          <a href="{% url 'users_app:login' %}">Iniciar Sesion</a>
-          <a href="{% url 'users_app:register' %}">Registrarse</a>
-        </div>
-        {% else %}
-    
-        <div class="container__perfil">
-          <ul>
-            <li ><a href=""><img id="perfil" src="" alt="">Perfil</a></li>
-            <div class="container__sub_menu">
-                <ul>
-                  
-                  <li> <a href="{% url 'users_app:logout'  %}">Cerrar Sesion</a></li>
-                </ul>
-              </div>
-          </ul>
-          
-        </div>
-        {% endif %}
-
+<header class="header">
+  <div class="container">
+    <a href="{% url 'panel_app:index' %}"><img class="logo" src="{% static 'img/logo.png' %}" alt="logo teclado"></a>
+    <div class="container__buscador">
+      <form method="GET" class="form">
+        <button class="lupa" type="submit"><img src="{% static 'img/search.png' %}" alt=""></button>
+        <input type="text" id="kword" name="kword" placeholder="Buscar..">
+      </form>
     </div>
+    <nav class="navegation">
+      <button class="hamburger" id="hamburger">  <img src="{% static 'img/menu_bar.png' %}" alt="">   </button>
+      <ul class="nav-ul" id="nav-ul">
+        {% if  user.is_anonymous %}
+        <li><a href="{% url 'users_app:login' %}">Iniciar Sesion</a></li>
+        <li><a href="{% url 'users_app:register' %}">Registrarse</a></li>
+        {% else %}
+        <li>perfil</li>
+        <ul>
+          <li> <a href="{% url 'users_app:logout'  %}">Cerrar Sesion</a></li>
+        </ul>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
 </header>
+
 {% endblock content %}
+{% block js %}
+<script src="{% static 'js/header.js' %}"></script> 
+ 
+{% endblock js %}
