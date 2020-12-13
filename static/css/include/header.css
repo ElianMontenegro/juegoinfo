@@ -127,7 +127,6 @@
     top: 50px;
   }
   
- 
   .container a{
     color: black;
   }
@@ -209,7 +208,7 @@
   
 } 
 
-@media only screen and  (max-width:560px){
+@media only screen and  (max-width:460px){
   
   .container .navegation .nav-ul.show{
     display: flex;
