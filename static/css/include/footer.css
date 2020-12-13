@@ -5,6 +5,7 @@
     height: 150px;
     background-color: #44B78B;
     flex-wrap: wrap;
+    bottom: 0;
 }
 
 .footer .info{
