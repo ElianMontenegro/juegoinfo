@@ -128,7 +128,9 @@
   }
   
  
-  
+  .container a{
+    color: black;
+  }
 } 
 
 
@@ -154,7 +156,9 @@
     height: 20px;
     color: aliceblue;
   }
-  
+  .container a{
+    color: black;
+  }
   
 } 
 
@@ -170,7 +174,9 @@
     top: 50px;
   }
   
- 
+  .container a{
+    color: black;
+  }
   
 } 
 
@@ -196,7 +202,9 @@
     height: 18px;
     color: aliceblue;
   }
-  
+  .container a{
+    color: black;
+  }
  
   
 } 
@@ -222,7 +230,9 @@
     width: 60px;
     height: 60px;
   }
-  
+  .container a{
+    color: black;
+  }
   
   
 } 
@@ -251,7 +261,9 @@
     height: 45px;
   }
   
-  
+  .container a{
+    color: black;
+  }
   
 } 
 
@@ -280,5 +292,7 @@
   }
   
   
-  
+  .container a{
+    color: black;
+  }
 } 
