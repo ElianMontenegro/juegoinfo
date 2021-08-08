@@ -12,7 +12,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
 
-    instagram = models.URLField("Instagram", max_length=200, blank=True)
 
     USERNAME_FIELD = 'email'
 
